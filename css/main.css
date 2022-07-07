@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    font-family: 'Poppins', sans-serif;
+}
+
+span a {
+    font-size: 20px;
+    font-weight: 500;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+}
+
+header nav {
+    height: 60px;
+    width: 100%;
+}
+
+#check {
+    display: none;
+}
+
+.mobile-nav {
+    float: right;
+    margin: 15 20px;
+    padding: 10px;
+    font-size: 30px;
+    color: #f5f5f5;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .logo img {
+    margin: 10px;
+    width: 110px;
+    height: 110px;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+}
+
+header nav ul {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 20px;
+    list-style: none;
+}
+
+.nav-item {
+    position: relative;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #f5f5f5;
+}
+
+.nav-item:hover::after {
+    left: 0;
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+.front {
+    margin: 10px 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.front-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.front-content h1,
+h2 {
+    color: #f5f5f5;
+}
+
+.front-img-cont img {
+    width: 100%;
+    height: 400px;
+}
+
+header .wave {
+    position: absolute;
+    width: 100%;
+    height: 143px;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/wave.png);
+    animation: animate 10s linear infinite;
+}
+
+header .wave::before {
+    content: '';
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    background-image: url(../img/wave.png);
+    top: 0;
+    left: 0;
+    opacity: .3;
+    animation: animate-reverse 10s linear infinite;
+}
+
+header .wave::after {
+    content: '';
+    width: 100%;
+    height: 143px;
+    position: absolute;
+    background-image: url(../img/wave.png);
+    top: 0;
+    left: 0;
+    opacity: .6;
+    animation-delay: -5s;
+    animation: animate-reverse 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 1360px;
+    }
+}
+
+@keyframes animate-reverse {
+    0% {
+        background-position: 1360px;
+    }
+
+    100% {
+        background-position: 0;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 8px;
+}
+
+#about,
+#skills,
+#works,
+#contact,
+#undertake {
+    text-align: center;
+    background: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.profile p,
+.jesswebs-content p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.undertake {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 10px;
+}
+
+.jesswebs-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jesswebs-logo img {
+    width: 90%;
+    height: auto;
+}
+
+.jesswebs-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cta {
+    border: none;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 40px;
+    margin-top: 10px;
+    opacity: .8;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f5f5f5;
+    padding-right: 20px;
+}
+
+.cta i {
+    padding: 20px;
+}
+
+.cta:hover {
+    opacity: 1;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+}
+
+.html,
+.css,
+.js,
+.bootstrap,
+.git,
+.github {
+    margin: 10px;
+}
+
+.works {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+}
+
+.works .cards {
+    width: 330px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+    overflow: hidden;
+    margin: 20px 0px 20px 20px;
+    text-align: center;
+}
+
+.works .cards p,
+h4,
+a {
+    padding: 10px;
+}
+
+.works .cards:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, .5);
+}
+
+.works .cards img {
+    width: 330px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.works .cards a {
+    color: #000428;
+    font-size: 20px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+}
+
+.contact a {
+    color: #000428;
+
+}
+
+.contact a p {
+    color: #000428;
+    font-weight: 500;
+}
+
+
+.contact-icon {
+    font-size: 35px;
+    color: #000428;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+    color: whitesmoke;
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+footer .logo {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+    font-size: 20px;
+    margin: 15px;
+    display: inline-block;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    opacity: .6;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.copyright {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:2600px) {
+    front-img-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+    }
+
+    .front-img-cont img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+@media only screen and (max-width:1154px) {
+    nav .logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width:1035px) {
+    header nav {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+    }
+
+    nav .logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    front-img-cont {
+        height: auto;
+    }
+
+    .front-img-cont img {
+        width: 290px;
+        height: 300px;
+    }
+
+    header nav ul {
+        position: relative;
+        width: 100%;
+        height: 70vh;
+        left: 0;
+        text-align: center;
+        background: #000428;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #004e92, #000428);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #004e92, #000428);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        transition: all 1s;
+        left: -100%;
+    }
+
+    header nav ul li {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .front {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 10px;
+    }
+
+    .front-img-cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .undertake {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .jesswebs-content {
+        margin-top: 15px;
+    }
+
+    .skills {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .works {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .works .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .works .cards {
+        width: 90%;
+    }
+
+    .works .cards img {
+        width: 100%;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .contact-icon {
+        font-size: 30px;
+        color: #000428;
+    }
+
+    .social {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+@media only screen and (max-width:638px) {
+    .front {
+        top: 200px;
+    }
+
+    .front-img-cont {
+        margin: 100px 20px;
+    }
+
+    .front-content {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:1920px) {
+
+    nav .logo img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .works .cards {
+        width: 100%;
+    }
+
+    .works .cards img {
+        width: 100%;
+    }
+
+}
