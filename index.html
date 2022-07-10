@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jesús Florez Ascanio / Desarrollador web / JessWebs" />
-  <meta name="keywords" content="Diseño web, Desarrollo web, Sitios webs responsive, Programación web, Creación de páginas web, Estándares web" />
+  <meta name="keywords"
+    content="Diseño web, Desarrollo web, Sitios webs responsive, Programación web, Creación de páginas web, Estándares web" />
   <meta name="description"
     content="Creamos tu sitio web personalizado a medida, implementado técnicas de posicionamiento (SEO) y adaptabilidad a cualquier tipo de pantalla. No esperes más para hacer crecer tu negocio, ¡Contactános! 🚀" />
   <title>JessWebs / Diseño y Desarrollo Web</title>
@@ -14,6 +15,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="css/main.css" />
+  <!-- Animate.CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Íconos -->
   <script src="https://kit.fontawesome.com/33c7816f2e.js" crossorigin="anonymous"></script>
   <!-- Tipografías -->
@@ -36,7 +39,7 @@
     <nav>
       <input type="checkbox" id="check">
       <label class="mobile-nav" for="check">
-        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-bars animate__animated animate__tada animate__delay-1s"></i>
       </label>
       <label class="logo">
         <img src="img/jesswebs-01.png" alt="Logo JessWebs">
@@ -51,10 +54,10 @@
       </ul>
     </nav>
     <section class="front">
-      <div class="front-content">
-        <h1>JessWebs</h1>
+      <div class="front-content wow">
+        <h1 class="animate__animated animate__bounceInLeft">JessWebs</h1>
         <br>
-        <h2>Diseño y Desarrollo web</h2>
+        <h2 class="animate__animated animate__bounceInRight">Diseño y Desarrollo web</h2>
       </div>
       <div class="front-img-cont">
         <img src="img/developer.svg" class="front-img" alt="Desarrollador Web / Ilustración">
@@ -75,7 +78,8 @@
         </p>
         <br />
         <p>
-          Me apasiona lo que hago, por eso cada día trabajo duro y me esfuerzo para hacer las cosas correctamente; además, siempre estoy buscando aprender nuevas
+          Me apasiona lo que hago, por eso cada día trabajo duro y me esfuerzo para hacer las cosas correctamente;
+          además, siempre estoy buscando aprender nuevas
           tecnologías
           y mejorar competencias de mis habilidades actuales.
         </p>
@@ -89,15 +93,20 @@
         </div>
         <div class="jesswebs-content">
           <p>
-            El nombre JessWebs surge de la fusión de Jesús (mi nombre) y Web (término relacionado con el servicio a ofrecer), este es un proyecto que, inicialmente, planteé como mi portafolio de desarrollador, pero que después tomé la decisión de que funcionara como portafolio y, a la vez, como un medio freelance para ofrecer y promocionar mis servicios de diseño y desarrollo web.
+            El nombre JessWebs surge de la fusión de Jesús (mi nombre) y Web (término relacionado con el servicio a
+            ofrecer), este es un proyecto que, inicialmente, planteé como mi portafolio de desarrollador, pero que
+            después tomé la decisión de que funcionara como portafolio y, a la vez, como un medio freelance para ofrecer
+            y promocionar mis servicios de diseño y desarrollo web.
           </p>
           <br>
           <p>
-            La marca JessWebs es un emprendimiento personal y para lograr un aspecto más profesional, diseñé mi propio logo.
+            La marca JessWebs es un emprendimiento personal y para lograr un aspecto más profesional, diseñé mi propio
+            logo.
           </p>
           <br>
           <a href="https://wa.me/573028664002?text=¡Hola!%20Me%20interesa%20hablar%20contigo%20acerca%20del%20desarrollo%20de%20un%20sitio%20web."
-            target="_blank" class="cta"><i class="fa-brands fa-whatsapp"></i>Envíame un Whats</a>
+            target="_blank" class="wow cta animate__animated animate__backInUp"><i
+              class="fa-brands fa-whatsapp"></i>Envíame un Whats</a>
         </div>
       </div>
     </div>
@@ -144,19 +153,24 @@
         <div class="cards">
           <img src="img/capturahtml.png" alt="Documentación HTML">
           <h4>Documentación HTML</h4>
-          <p>Una página web que recopila las etiquetas, estructura, y un poco de historia del lenguaje de marcado de hipertexto.</p>
+          <p>Una página web que recopila las etiquetas, estructura, y un poco de historia del lenguaje de marcado de
+            hipertexto.</p>
           <a href="https://jesswebs.github.io/Documentacion-html/" target="_blank">Visitar sitio</a>
         </div>
         <div class="cards">
           <img src="img/proximamente.gif" alt="Documentación CSS">
           <h4>Documentación CSS</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam tenetur! Nihil harum ratione quos, quam perspiciatis rerum quia dolorem doloribus eius officia non porro, est debitis aliquam quisquam temporibus?</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, ipsam tenetur! Nihil harum ratione quos,
+            quam perspiciatis rerum quia dolorem doloribus eius officia non porro, est debitis aliquam quisquam
+            temporibus?</p>
           <a href="#">Visitar sitio</a>
         </div>
         <div class="cards">
           <img src="img/proximamente.gif" alt="Documentación PHP">
           <h4>Documentación PHP</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti voluptatum itaque odio sit officia modi doloremque, deleniti pariatur at nulla maxime eius vel reiciendis officiis architecto nemo. Quasi, debitis?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corrupti voluptatum itaque odio sit
+            officia modi doloremque, deleniti pariatur at nulla maxime eius vel reiciendis officiis architecto nemo.
+            Quasi, debitis?</p>
           <a href="#">Visitar sitio</a>
         </div>
       </div>
@@ -168,7 +182,7 @@
         <div class="email">
           <a href="mailto:jesswebdeveloper06@gmail.com?Subject=Estoy%20interesad@%20en%20tus%20servicios%20de%20desarrollador%20web."
             target="_blank">
-            <i class="fa-solid fa-envelope contact-icon"></i>
+            <i class="fa-solid fa-envelope contact-icon wow animate__animated animate__heartBeat animate__delay-1s"></i>
           </a>
           <pre> </pre><strong>Correo electrónico</strong>
           <a href="mailto:jesswebdeveloper06@gmail.com?Subject=Estoy%20interesad@%20en%20tus%20servicios%20de%20desarrollador%20web."
@@ -178,7 +192,7 @@
         </div>
         <div class="tfl">
           <a href="tel:+573028664002" target="_blank">
-            <i class="fa-solid fa-phone contact-icon"></i>
+            <i class="fa-solid fa-phone contact-icon wow animate__animated animate__heartBeat animate__delay-1s"></i>
           </a>
           <pre> </pre><strong>Teléfono celular</strong>
           <a href="tel:+573028664002" target="_blank">
@@ -186,14 +200,14 @@
           </a>
         </div>
         <div class="business">
-          <i class="fa-solid fa-building contact-icon"></i>
+          <i class="fa-solid fa-building contact-icon wow animate__animated animate__heartBeat animate__delay-1s"></i>
           <pre> </pre><strong>Compañía</strong>
           <p>JessWebs / Diseño y Desarrollo Web</p>
         </div>
         <div class="name">
           <a href="https://wa.me/573028664002?text=¡Hola!%20Me%20interesa%20hablar%20contigo%20acerca%20del%20desarrollo%20de%20un%20sitio%20web."
             target="_blank">
-            <i class="fa-solid fa-user contact-icon"></i>
+            <i class="fa-solid fa-user contact-icon wow animate__animated animate__heartBeat animate__delay-1s"></i>
           </a>
           <pre> </pre><strong>Desarrollador Web</strong>
           <a href="https://wa.me/573028664002?text=¡Hola!%20Me%20interesa%20hablar%20contigo%20acerca%20del%20desarrollo%20de%20un%20sitio%20web."
@@ -226,6 +240,10 @@
       <p>Hecho por <span><a href="https://www.instagram.com/jesswebs06/" target="_blank">Jesús</a></span> con ❤️</p>
     </div>
   </footer>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 </body>
 
 </html>
